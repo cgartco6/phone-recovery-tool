@@ -1,0 +1,43 @@
+<!-- frontend/ai-dashboard.html -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-robot"></i> AI Recovery Assistant</h5>
+            </div>
+            <div class="card-body">
+                <!-- AI Task Planning -->
+                <div class="mb-4">
+                    <h6>AI Task Planning</h6>
+                    <div id="aiTaskPlan" class="mt-3"></div>
+                </div>
+
+                <!-- Credential Recovery Assistant -->
+                <div class="mb-4">
+                    <h6>Credential Recovery Assistant</h6>
+                    <div class="mb-3">
+                        <label class="form-label">What you remember about the account:</label>
+                        <textarea class="form-control" id="accountClues" rows="3" 
+                                  placeholder="e.g., parts of email, name, birth year, phone number..."></textarea>
+                    </div>
+                    <button id="analyzeCredentials" class="btn btn-warning">
+                        <i class="fas fa-key"></i> Analyze Possible Accounts
+                    </button>
+                    <div id="credentialAnalysis" class="mt-3"></div>
+                </div>
+
+                <!-- AI Agent Status -->
+                <div class="mb-4">
+                    <h6>AI Agent Status</h6>
+                    <div id="agentStatus" class="row"></div>
+                </div>
+
+                <!-- Learning Memory -->
+                <div>
+                    <h6>Learning & Experience</h6>
+                    <div id="learningInsights" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
