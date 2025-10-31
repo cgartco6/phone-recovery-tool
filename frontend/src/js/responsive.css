@@ -1,0 +1,85 @@
+/* frontend/src/css/responsive.css */
+/* Mobile-first responsive design */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .glass-card {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+    
+    .feature-icon {
+        font-size: 2rem !important;
+    }
+    
+    .stats-card {
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    .display-6 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .glass-card:hover {
+        transform: none;
+    }
+    
+    button, .btn {
+        min-height: 44px;
+        padding: 12px 16px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .glass-card {
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .glass-card {
+        border: 2px solid white;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .glass-card {
+        transition: none;
+    }
+    
+    .recovery-animation {
+        animation: none;
+    }
+}
